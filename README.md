@@ -145,8 +145,7 @@ sqlite3 analisis_ventas.sqlite < top3_productos.sql
 
 ## Gráfico
 
-Se genera **`grafico.png`** con barras (2 colores alternados), etiquetas de totales y eje Y sin notación científica.  
-Función utilizada: `helpers.generar_grafico_facturacion(...)`.
+Se genera **`grafico.png`** en la carpeta donde se ejecuta el script.
 
 ---
 
