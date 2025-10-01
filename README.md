@@ -68,16 +68,9 @@ fecha,producto,cantidad,precio_unitario
 ### Ejecutar análisis (lee CSV, limpia, calcula y guarda)
 #### Usa ventas.csv si existe en la carpeta actual
 ```bash
-
 python analisis_ventas.py
-
-
-python analisis_ventas.py --csv ventas.csv
-
-# Permitir ceros en cantidad / precio_unitario
-python analisis_ventas.py --csv ventas.csv --permite_cero
 ```
-#### O indicando el archivo
+#### O indicando el archivo opcional
 ```bash
 python analisis_ventas.py --csv ventas.csv
 ```
@@ -86,8 +79,6 @@ python analisis_ventas.py --csv ventas.csv
 ```bash
 python analisis_ventas.py --csv ventas.csv --permite_cero
 
-# Permitir ceros en cantidad / precio_unitario
-python analisis_ventas.py --csv ventas.csv --permite_cero
 ```
 
 Al finalizar:
@@ -102,11 +93,11 @@ python analisis_ventas.py --persistencia
 ```
 
 ### Mostrar el Top 3 guardado Ejecutar con --top (no lee CSV)
-# Del último análisis
+#### Del último análisis
 ```bash
 python analisis_ventas.py --top
 ```
-# De un análisis específico (por id)
+#### De un análisis específico (por id)
 ```bash
 python analisis_ventas.py --top 7
 ```
