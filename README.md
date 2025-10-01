@@ -181,18 +181,7 @@ pytest -q
 └── README.md
 ```
 
----
 
-## Notas
-
-- `ts` se guarda en **UTC**. Puedes convertirlo a local al consultar:
-  ```sql
-  SELECT id, datetime(ts,'localtime') AS ts_local FROM analisis ORDER BY id DESC;
-  ```
-- `TOP_N_DEFAULT = 3` controla cuánto muestra `--top` y `--persistencia` (no lo guardado).
-- `ventas.csv` no se sube al repo por tratarse de datos de entrada.
-
----
 
 ## Licencia
 
