@@ -66,16 +66,30 @@ fecha,producto,cantidad,precio_unitario
 ## Uso (CLI)
 
 ### Ejecutar análisis (lee CSV, limpia, calcula y guarda)
+#### Usa ventas.csv si existe en la carpeta actual
 ```bash
-# Usa ventas.csv si existe en la carpeta actual
+
 python analisis_ventas.py
 
-# O indicando el archivo
+
 python analisis_ventas.py --csv ventas.csv
 
 # Permitir ceros en cantidad / precio_unitario
 python analisis_ventas.py --csv ventas.csv --permite_cero
 ```
+#### O indicando el archivo
+```bash
+python analisis_ventas.py --csv ventas.csv
+```
+
+#### Permitir ceros en cantidad / precio_unitario
+```bash
+python analisis_ventas.py --csv ventas.csv --permite_cero
+
+# Permitir ceros en cantidad / precio_unitario
+python analisis_ventas.py --csv ventas.csv --permite_cero
+```
+
 Al finalizar:
 - Muestra en consola el análisis (productos top y facturación mensual).
 - Genera **`grafico.png`** (barras 2 colores, totales encima).
