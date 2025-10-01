@@ -87,7 +87,7 @@ Al finalizar:
 - Persiste el **ranking de “más vendidos”** en **`analisis_ventas.sqlite`**.
 
 ### Consultar persistencia Ejecutar con --persistencia (no lee CSV)
-# Lista los últimos 5 análisis (id, timestamp, y preview Top 3)
+#### Lista los últimos 5 análisis (id, timestamp, y preview Top 3)
 ```bash
 python analisis_ventas.py --persistencia
 ```
