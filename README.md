@@ -81,18 +81,19 @@ Al finalizar:
 - Genera **`grafico.png`** (barras 2 colores, totales encima).
 - Persiste el **ranking de “más vendidos”** en **`analisis_ventas.sqlite`**.
 
-### Consultar persistencia (no lee CSV)
-```bash
+### Consultar persistencia Ejecutar con --persistencia (no lee CSV)
 # Lista los últimos 5 análisis (id, timestamp, y preview Top 3)
+```bash
 python analisis_ventas.py --persistencia
 ```
 
-### Mostrar el Top 3 guardado (no lee CSV)
-```bash
+### Mostrar el Top 3 guardado Ejecutar con --top (no lee CSV)
 # Del último análisis
+```bash
 python analisis_ventas.py --top
-
+```
 # De un análisis específico (por id)
+```bash
 python analisis_ventas.py --top 7
 ```
 
